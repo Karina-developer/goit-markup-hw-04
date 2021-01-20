@@ -2,6 +2,7 @@
   --accent-color: #2196f3;
   --main-color: #212121;
   --text-decoration-color: #757575;
+  --card-portfolio-gap: 30px;
 }
 
 body {
@@ -450,8 +451,8 @@ img {
 .card-portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--card-portfolio-gap));
+  margin-left: calc(-1 * var(--card-portfolio-gap));
 }
 
 .portfolio-section {
@@ -490,8 +491,8 @@ img {
 }
 
 .card-portfolio-item {
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: var(--card-portfolio-gap);
+  margin-left: var(--card-portfolio-gap);
   flex-basis: calc(100% / 3 - 30px);
 }
 
