@@ -320,6 +320,8 @@ img {
   cursor: pointer;
   flex-basis: calc(100% / 4 - 30px);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   background: #ffffff;
 }
 
@@ -498,6 +500,8 @@ img {
   margin-top: var(--card-portfolio-gap);
   margin-left: var(--card-portfolio-gap);
   flex-basis: calc(100% / 3 - 30px);
+  box-sizing: border-box;
+  background: #ffffff;
   outline: 1px solid #eeeeee;
 }
 
@@ -506,7 +510,6 @@ img {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  background: #ffffff;
 }
 
 /* ===============END PORTFOLIO==================== */
