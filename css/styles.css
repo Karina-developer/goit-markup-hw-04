@@ -118,7 +118,8 @@ img {
 }
 
 .mailto-link {
-  display: block;
+  display: flex;
+  align-items: center;
   min-width: 135px;
   font-weight: 500;
   padding-top: 32px;
@@ -151,14 +152,26 @@ img {
   color: var(--accent-color);
 }
 
-.tel-link:hover .auth-list-icon,
-.tel-link:focus .auth-list-icon {
+.tel-link:hover .phone-list-icon,
+.tel-link:focus .phone-list-icon {
   fill: var(--accent-color);
 }
 
-.auth-list-icon {
+.mailto-link:hover .mail-list-icon,
+.mailto-link:focus .mail-list-icon {
+  fill: var(--accent-color);
+}
+
+.phone-list-icon {
   width: 10px;
   height: 16px;
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.mail-list-icon {
+  width: 16px;
+  height: 12px;
   margin-right: 10px;
   fill: #757575;
 }
