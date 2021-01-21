@@ -227,9 +227,43 @@ img {
 
 /* =============FEATURES============ */
 
+.icon-antenna::before {
+  background-image: url(../imajes/icons/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../imajes/icons/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../imajes/icons/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../imajes/icons/astronaut.svg);
+}
+
+.features-list .item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.item::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  background-position: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+}
+
 .features-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .features-section {
@@ -270,9 +304,6 @@ img {
   margin-right: 30px;
 }
 
-.features-item {
-  flex-basis: calc(100% / 4 - 30px);
-}
 
 /* =============END FEATURES============ */
 
