@@ -213,14 +213,14 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color:  #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
   cursor: pointer;
   border-radius: 4px;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ============ END HERO=============== */
@@ -336,6 +336,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background: #ffffff;
 }
+
 
 .team-section {
   padding-bottom: 94px;
@@ -460,22 +461,20 @@ img {
 /* ===============FOOTER==================== */
 
 .footer {
-  background-color: #2f303a;
+ display: flex;
+ height: 252px;
+ padding-top: 60px;
+ padding-bottom: 60px;
+ background-color: #2f303a;
 }
 
 .container-footer {
   display: flex;
-  flex-direction: column;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-}
-
-.footer-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .address {
@@ -539,6 +538,53 @@ img {
 .footer-tel-link:hover,
 .footer-tel-link:focus {
   color: var(--accent-color);
+}
+
+.footer-list-left-side {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+
+.footer-list-right-side {
+  width: 270px;
+  padding-left: 30px;
+}
+
+.footer-title {
+min-width: 145px;
+height: 16px;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.142;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-bottom: 20px;
+
+color: #FFFFFF;
+}
+
+.social-footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);;
+  border-radius: 50%;
+}
+
+.social-footer-link:hover,
+.social-footer-link:focus {
+  background-color: #2196f3;
+}
+
+.footer-list-icon {
+  width: 20px;
+  height: 20px;
+  fill:#FFFFFF;
 }
 
 /* ===============PORTFOLIO==================== */
@@ -629,7 +675,7 @@ cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
   text-align: center;
-  background-color: #f5f4fa;
+  border: transparent;
   color: var(--main-color);
   cursor: pointer;
 }
@@ -637,6 +683,7 @@ cursor: pointer;
 .portfolio-btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ===============END BUTTON=================== */
