@@ -731,9 +731,11 @@ img {
 .portfolio-btn {
   font-family: inherit;
   min-width: 73px;
+  font-weight: 500;
   display: inline-block;
   border-radius: 4px;
   padding: 6px 22px;
+  letter-spacing: 0.03em;
   text-align: center;
   border: transparent;
   color: var(--main-color);
