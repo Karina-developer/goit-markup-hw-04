@@ -456,7 +456,8 @@ img {
   background-color: #2196f3;
 }
 
-.social-list-link:hover .social-list-icon {
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
   fill: #ffffff;
 }
 
@@ -579,7 +580,7 @@ img {
   color: var(--text-decoration-color);
 }
 .footer-mailto-link:hover,
-.mailto-link:focus {
+.footer-mailto-link:focus {
   color: var(--accent-color);
 }
 .footer-tel-link {
