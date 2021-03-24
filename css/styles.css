@@ -2,13 +2,14 @@
   --accent-color: #2196f3;
   --main-color: #212121;
   --text-decoration-color: #757575;
+  --background-color: #ffffff;
   --card-portfolio-gap: 30px;
 }
 
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  background-color: #ffffff;
+  background-color: var(--background-color);
   color: var(--text-decoration-color);
 }
 
@@ -47,20 +48,19 @@ img {
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
 /* наведение курсором #2196F3 */
-/* бэкграунд 1 #2F303A */
-/* бэкграунд 2 #F5F4FA */
+/* бэкграунд #2F303A */
 
 .logotipe-link {
   width: 145px;
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   margin-right: 93px;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  text-decoration: none;
 }
+
 .logotipe-link > .logotipe-part {
   color: #000000;
 }
@@ -68,7 +68,7 @@ img {
 /* ===========HEADER=============== */
 
 .header {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   border-bottom: 1px solid #ececec;
 }
 
@@ -99,7 +99,6 @@ img {
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-color);
-  outline: none;
 }
 
 .auth-navigation-list {
@@ -131,10 +130,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);
 }
+
 .mailto-link:hover,
 .mailto-link:focus {
   color: var(--accent-color);
-  outline: none;
 }
 
 .tel-link {
@@ -144,7 +143,6 @@ img {
   padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
-  font-style: normal;
   line-height: 1.172;
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);
@@ -152,19 +150,16 @@ img {
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
-  outline: none;
 }
 
 .tel-link:hover .phone-list-icon,
 .tel-link:focus .phone-list-icon {
   fill: var(--accent-color);
-  outline: none;
 }
 
 .mailto-link:hover .mail-list-icon,
 .mailto-link:focus .mail-list-icon {
   fill: var(--accent-color);
-  outline: none;
 }
 
 .phone-list-icon {
@@ -216,17 +211,12 @@ img {
   text-align: center;
   background-color: #2f303a;
   background-repeat: no-repeat;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../imajes/hero/img.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imajes/hero/img.jpg");
   background-size: cover;
 }
 
 .hero-title {
   width: 696px;
-  font-style: normal;
   font-weight: 900;
   margin-top: auto;
   margin-bottom: 30px;
@@ -236,30 +226,29 @@ img {
   line-height: 1.363;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 /* Кнопка */
 
 .modal-btn {
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   padding: 10px 32px;
   min-width: 200px;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-
-  cursor: pointer;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  outline: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* ============ END HERO=============== */
@@ -316,7 +305,6 @@ img {
 
 .features-title {
   min-width: 270px;
-  font-style: normal;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 10px;
@@ -329,8 +317,6 @@ img {
 
 .description {
   width: 270px;
-  font-style: normal;
-  font-weight: normal;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
@@ -352,9 +338,7 @@ img {
   flex-wrap: wrap;
 }
 .title {
-  min-width: 376px;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   margin-left: auto;
   margin-right: auto;
@@ -401,9 +385,8 @@ img {
   padding-bottom: 30px;
   flex-basis: calc(100% / 4 - 30px);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: var(--background-color);
 }
 
 .team-section {
@@ -415,7 +398,6 @@ img {
 .team-title {
   min-width: 151px;
   height: 19px;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
@@ -428,8 +410,6 @@ img {
 .team-description {
   min-width: 147px;
   height: 19px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 16px;
@@ -501,7 +481,6 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
-  outline: none;
 }
 
 .clients-section {
@@ -550,20 +529,22 @@ img {
   padding-left: 15px;
 }
 
-.address {
-  margin-top: 20px;
+.footer-item {
+  margin-bottom: 20px;
+}
+
+.footer-item-address:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-map {
   display: block;
   width: 231px;
   font-style: normal;
-  font-weight: normal;
-  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .footer-logotipe-link {
@@ -571,7 +552,7 @@ img {
   width: 145px;
   height: 31px;
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
@@ -579,7 +560,7 @@ img {
   text-decoration: none;
 }
 .footer-logotipe-link > .logotipe-part {
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .footer-mailto-link {
@@ -587,32 +568,29 @@ img {
   width: 231px;
   font-weight: 500;
   font-size: 14px;
-  margin-bottom: 9px;
   font-style: normal;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  color: var(--text-decoration-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-mailto-link:hover,
 .footer-mailto-link:focus {
   color: var(--accent-color);
-  outline: none;
 }
+
 .footer-tel-link {
   display: block;
   width: 231px;
-  font-weight: 500;
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
   line-height: 1.172;
   letter-spacing: 0.02em;
-  color: var(--text-decoration-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel-link:hover,
 .footer-tel-link:focus {
   color: var(--accent-color);
-  outline: none;
 }
 
 .footer-list-left-side {
@@ -629,15 +607,14 @@ img {
 .footer-title {
   min-width: 145px;
   height: 16px;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .social-footer-link {
@@ -654,7 +631,6 @@ img {
 .social-footer-link:hover,
 .social-footer-link:focus {
   background-color: #2196f3;
-  outline: none;
 }
 
 .footer-list-icon {
@@ -671,8 +647,7 @@ img {
 
 .portfolio-box .section-link:hover,
 .portfolio-box .section-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: none;
 }
 
@@ -686,12 +661,11 @@ img {
 .portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background: #ffffff;
+  background: var(--background-color);
 }
 
 .portfolio-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 4px;
@@ -710,7 +684,7 @@ img {
 
 .portfolio-list {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -731,7 +705,7 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
   box-sizing: border-box;
-  background: #ffffff;
+  background: var(--background-color);
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -742,24 +716,25 @@ img {
 /* ===============BUTTON==================== */
 .portfolio-btn {
   font-family: inherit;
-  min-width: 73px;
-  font-weight: 500;
   display: inline-block;
+  font-weight: 500;
   border-radius: 4px;
   padding: 6px 22px;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   text-align: center;
   border: transparent;
+  background-color: #f5f4fa;
   color: var(--main-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #ffffff;
+  color: var(--background-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  outline: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ===============END BUTTON=================== */
