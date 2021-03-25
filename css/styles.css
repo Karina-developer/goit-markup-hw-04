@@ -427,7 +427,6 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .social-list-link {
@@ -637,6 +636,10 @@ img {
   width: 20px;
   height: 20px;
   fill: #ffffff;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* ===============PORTFOLIO==================== */
