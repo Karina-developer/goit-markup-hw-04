@@ -453,6 +453,10 @@ img {
   outline: none;
 }
 
+.team-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .team-list-content-wrapper {
   padding-top: 30px;
   padding-left: 32px;
